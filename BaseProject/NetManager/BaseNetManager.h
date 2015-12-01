@@ -28,4 +28,6 @@
  *  @return 转化 路径+参数 拼接出的字符串中的中文为 % 号形势
  */
 + (NSString *)percentPathWithPath:(NSString *)path params:(NSDictionary *)params;
+
++(NSString *)dictChangeUrl : (NSDictionary *)dict baseUrL : (NSString *)baseUrl;
 @end

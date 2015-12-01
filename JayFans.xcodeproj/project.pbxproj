@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
+		2200ED1B1C02BC1000DCF275 /* inforMationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200ED1A1C02BC1000DCF275 /* inforMationModel.m */; };
+		2200ED241C030E4400DCF275 /* JieMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200ED231C030E4400DCF275 /* JieMessageModel.m */; };
+		2200ED2E1C0311E000DCF275 /* JieMiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200ED2D1C0311E000DCF275 /* JieMiModel.m */; };
+		2200ED321C0312B700DCF275 /* JieNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2200ED311C0312B700DCF275 /* JieNetManager.m */; };
+		229B7F631C05960C0002F443 /* TwoPicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B7F621C05960C0002F443 /* TwoPicCell.m */; };
+		22BC58191C08547700340836 /* jieTypeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC58181C08547700340836 /* jieTypeViewModel.m */; };
+		22BC581C1C08644C00340836 /* JiePicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC581B1C08644C00340836 /* JiePicCollectionViewController.m */; };
+		22C075CD1C09418D003F975F /* jieMiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C075CC1C09418D003F975F /* jieMiViewModel.m */; };
+		22C075D01C094721003F975F /* JieMiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C075CF1C094721003F975F /* JieMiCollectionViewController.m */; };
+		22C075D31C0948D8003F975F /* JiemICell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C075D21C0948D8003F975F /* JiemICell.m */; };
+		22DABA261C0475B200AB4D03 /* JieInfroMationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DABA251C0475B200AB4D03 /* JieInfroMationViewModel.m */; };
+		22DABA291C0494CF00AB4D03 /* OnePicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DABA281C0494CF00AB4D03 /* OnePicCell.m */; };
 		3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */; };
 		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; };
 		3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */; };
@@ -68,6 +80,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2200ED191C02BC1000DCF275 /* inforMationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inforMationModel.h; path = ../inforMationModel.h; sourceTree = "<group>"; };
+		2200ED1A1C02BC1000DCF275 /* inforMationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = inforMationModel.m; path = ../inforMationModel.m; sourceTree = "<group>"; };
+		2200ED221C030E4400DCF275 /* JieMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieMessageModel.h; sourceTree = "<group>"; };
+		2200ED231C030E4400DCF275 /* JieMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieMessageModel.m; sourceTree = "<group>"; };
+		2200ED2C1C0311E000DCF275 /* JieMiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieMiModel.h; sourceTree = "<group>"; };
+		2200ED2D1C0311E000DCF275 /* JieMiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieMiModel.m; sourceTree = "<group>"; };
+		2200ED301C0312B700DCF275 /* JieNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieNetManager.h; sourceTree = "<group>"; };
+		2200ED311C0312B700DCF275 /* JieNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieNetManager.m; sourceTree = "<group>"; };
+		229B7F611C05960C0002F443 /* TwoPicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPicCell.h; sourceTree = "<group>"; };
+		229B7F621C05960C0002F443 /* TwoPicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPicCell.m; sourceTree = "<group>"; };
+		22BC58171C08547700340836 /* jieTypeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jieTypeViewModel.h; sourceTree = "<group>"; };
+		22BC58181C08547700340836 /* jieTypeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jieTypeViewModel.m; sourceTree = "<group>"; };
+		22BC581A1C08644C00340836 /* JiePicCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiePicCollectionViewController.h; sourceTree = "<group>"; };
+		22BC581B1C08644C00340836 /* JiePicCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiePicCollectionViewController.m; sourceTree = "<group>"; };
+		22C075CB1C09418D003F975F /* jieMiViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jieMiViewModel.h; sourceTree = "<group>"; };
+		22C075CC1C09418D003F975F /* jieMiViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jieMiViewModel.m; sourceTree = "<group>"; };
+		22C075CE1C094721003F975F /* JieMiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieMiCollectionViewController.h; sourceTree = "<group>"; };
+		22C075CF1C094721003F975F /* JieMiCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieMiCollectionViewController.m; sourceTree = "<group>"; };
+		22C075D11C0948D8003F975F /* JiemICell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiemICell.h; sourceTree = "<group>"; };
+		22C075D21C0948D8003F975F /* JiemICell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiemICell.m; sourceTree = "<group>"; };
+		22DABA241C0475B200AB4D03 /* JieInfroMationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieInfroMationViewModel.h; sourceTree = "<group>"; };
+		22DABA251C0475B200AB4D03 /* JieInfroMationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieInfroMationViewModel.m; sourceTree = "<group>"; };
+		22DABA271C0494CF00AB4D03 /* OnePicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnePicCell.h; sourceTree = "<group>"; };
+		22DABA281C0494CF00AB4D03 /* OnePicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnePicCell.m; sourceTree = "<group>"; };
 		3804CE491BD758F10046C8C8 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
 		3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
 		3804CE4B1BD758F10046C8C8 /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
@@ -144,7 +180,7 @@
 		3885C9061BE8EA62009441EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3885C9081BE8EA6A009441EA /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		3885C90A1BE8EA70009441EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		3886C0931BD748830014E661 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3886C0931BD748830014E661 /* JayFans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JayFans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3886C0971BD748830014E661 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3886C0991BD748830014E661 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3886C09A1BD748830014E661 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -192,6 +228,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2200ED281C03102600DCF275 /* 星闻 */ = {
+			isa = PBXGroup;
+			children = (
+				2200ED191C02BC1000DCF275 /* inforMationModel.h */,
+				2200ED1A1C02BC1000DCF275 /* inforMationModel.m */,
+			);
+			path = "星闻";
+			sourceTree = "<group>";
+		};
 		3804CE481BD758F10046C8C8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +404,7 @@
 		3886C0941BD748830014E661 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3886C0931BD748830014E661 /* BaseProject.app */,
+				3886C0931BD748830014E661 /* JayFans.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,8 +448,13 @@
 		3886C0B01BD74A4A0014E661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2200ED281C03102600DCF275 /* 星闻 */,
 				3886C0BF1BD74B090014E661 /* BaseModel.h */,
 				3886C0C01BD74B090014E661 /* BaseModel.m */,
+				2200ED221C030E4400DCF275 /* JieMessageModel.h */,
+				2200ED231C030E4400DCF275 /* JieMessageModel.m */,
+				2200ED2C1C0311E000DCF275 /* JieMiModel.h */,
+				2200ED2D1C0311E000DCF275 /* JieMiModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,6 +464,8 @@
 			children = (
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
+				2200ED301C0312B700DCF275 /* JieNetManager.h */,
+				2200ED311C0312B700DCF275 /* JieNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -422,8 +474,8 @@
 			isa = PBXGroup;
 			children = (
 				3886C0A21BD748830014E661 /* Assets.xcassets */,
-				3886C0AD1BD749A00014E661 /* LaunchScreen.xib */,
 				3886C09F1BD748830014E661 /* Main.storyboard */,
+				3886C0AD1BD749A00014E661 /* LaunchScreen.xib */,
 				3886C0B81BD74A700014E661 /* PrefixHeader.pch */,
 			);
 			path = Resource;
@@ -451,6 +503,12 @@
 		3886C0B51BD74A4A0014E661 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22DABA271C0494CF00AB4D03 /* OnePicCell.h */,
+				22DABA281C0494CF00AB4D03 /* OnePicCell.m */,
+				229B7F611C05960C0002F443 /* TwoPicCell.h */,
+				229B7F621C05960C0002F443 /* TwoPicCell.m */,
+				22C075D11C0948D8003F975F /* JiemICell.h */,
+				22C075D21C0948D8003F975F /* JiemICell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +518,10 @@
 			children = (
 				3835CFB51BD90E150024CA48 /* ViewController.h */,
 				3835CFB61BD90E150024CA48 /* ViewController.m */,
+				22BC581A1C08644C00340836 /* JiePicCollectionViewController.h */,
+				22BC581B1C08644C00340836 /* JiePicCollectionViewController.m */,
+				22C075CE1C094721003F975F /* JieMiCollectionViewController.h */,
+				22C075CF1C094721003F975F /* JieMiCollectionViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -469,6 +531,12 @@
 			children = (
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
+				22DABA241C0475B200AB4D03 /* JieInfroMationViewModel.h */,
+				22DABA251C0475B200AB4D03 /* JieInfroMationViewModel.m */,
+				22BC58171C08547700340836 /* jieTypeViewModel.h */,
+				22BC58181C08547700340836 /* jieTypeViewModel.m */,
+				22C075CB1C09418D003F975F /* jieMiViewModel.h */,
+				22C075CC1C09418D003F975F /* jieMiViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -502,9 +570,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3886C0921BD748830014E661 /* BaseProject */ = {
+		3886C0921BD748830014E661 /* JayFans */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3886C0AA1BD748830014E661 /* Build configuration list for PBXNativeTarget "BaseProject" */;
+			buildConfigurationList = 3886C0AA1BD748830014E661 /* Build configuration list for PBXNativeTarget "JayFans" */;
 			buildPhases = (
 				3BE2C1445115A065F15F14E8 /* Check Pods Manifest.lock */,
 				3886C08F1BD748830014E661 /* Sources */,
@@ -517,9 +585,9 @@
 			);
 			dependencies = (
 			);
-			name = BaseProject;
+			name = JayFans;
 			productName = BaseProject;
-			productReference = 3886C0931BD748830014E661 /* BaseProject.app */;
+			productReference = 3886C0931BD748830014E661 /* JayFans.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -536,7 +604,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3886C08E1BD748830014E661 /* Build configuration list for PBXProject "BaseProject" */;
+			buildConfigurationList = 3886C08E1BD748830014E661 /* Build configuration list for PBXProject "JayFans" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -550,7 +618,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3886C0921BD748830014E661 /* BaseProject */,
+				3886C0921BD748830014E661 /* JayFans */,
 			);
 		};
 /* End PBXProject section */
@@ -646,20 +714,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2200ED321C0312B700DCF275 /* JieNetManager.m in Sources */,
+				22BC581C1C08644C00340836 /* JiePicCollectionViewController.m in Sources */,
+				2200ED241C030E4400DCF275 /* JieMessageModel.m in Sources */,
+				22C075D01C094721003F975F /* JieMiCollectionViewController.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				22DABA261C0475B200AB4D03 /* JieInfroMationViewModel.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
+				229B7F631C05960C0002F443 /* TwoPicCell.m in Sources */,
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
+				22C075D31C0948D8003F975F /* JiemICell.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
+				22DABA291C0494CF00AB4D03 /* OnePicCell.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
+				2200ED2E1C0311E000DCF275 /* JieMiModel.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
+				22BC58191C08547700340836 /* jieTypeViewModel.m in Sources */,
+				22C075CD1C09418D003F975F /* jieMiViewModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
+				2200ED1B1C02BC1000DCF275 /* inforMationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +869,8 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JayFans;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -814,14 +895,15 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JayFans;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3886C08E1BD748830014E661 /* Build configuration list for PBXProject "BaseProject" */ = {
+		3886C08E1BD748830014E661 /* Build configuration list for PBXProject "JayFans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3886C0A81BD748830014E661 /* Debug */,
@@ -830,7 +912,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3886C0AA1BD748830014E661 /* Build configuration list for PBXNativeTarget "BaseProject" */ = {
+		3886C0AA1BD748830014E661 /* Build configuration list for PBXNativeTarget "JayFans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3886C0AB1BD748830014E661 /* Debug */,

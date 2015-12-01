@@ -7,31 +7,119 @@
 //
 
 #import "ViewController.h"
+#import "JieInfroMationViewModel.h"
+#import "OnePicCell.h"
+#import "JieMessageModel.h"
+#import "TwoPicCell.h"
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
+@property(nonatomic,strong)JieInfroMationViewModel *jieViewModel;
 
 @end
 
 @implementation ViewController
 
+- (JieInfroMationViewModel *)jieViewModel {
+    if(_jieViewModel == nil) {
+        _jieViewModel = [[JieInfroMationViewModel alloc] init];
+        
+        //设置tableView背景色
+        self.tableView.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _jieViewModel;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+         [self.jieViewModel refreshDataCompletionHandle:^(NSError *error) {
+             if (error) {
+                 NSLog(@"%@", error.description);
+             }
+             [self.tableView reloadData];
+             [self.tableView.header endRefreshing];
+         }];
+     }];
+    
+    self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [self.jieViewModel getMoreDataCompletionHandle:^(NSError *error) {
+            if (error) {
+                NSLog(@"%@", error.description);
+            }
+            [self.tableView reloadData];
+            [self.tableView.footer endRefreshing];
+        }];
+    }];
+
+    [self.tableView.header beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.jieViewModel.rowNumber;
 }
-*/
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSInteger resction = indexPath.section;
+    //只有一张图片
+  if ([self.jieViewModel isOnePic:resction]) {
+    OnePicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
+        cell.titleLb.text = [self.jieViewModel titleForrRow:resction];
+        [cell.picView setImageWithURL:[self.jieViewModel imageCoverForRow:resction] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_3"]];
+        cell.commentLb.text = [NSString stringWithFormat:@"%ld",[self.jieViewModel commentsForRow:resction]];
+        cell.flowerLb.text = [NSString stringWithFormat:@"%ld",[self.jieViewModel flowersFoRow:resction]];
+        [cell.picUserView setImageWithURL:[self.jieViewModel  imageUserForRow:resction]];
+        cell.flowerUserLB.text = [self.jieViewModel flowersUserForRow:resction];
+        cell.peopleLb.text = [self.jieViewModel peopleNumForRow:resction];
+        return cell;
+    }else{
+        TwoPicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
+        
+        cell.titleLb.text = [self.jieViewModel titleForrRow:resction];
+
+        cell.phtot = self.jieViewModel.picArrays;
+
+        
+        cell.commentLb.text= [NSString stringWithFormat:@"%ld",[self.jieViewModel commentsForRow:resction]];
+       
+        cell.flowerLb.text = [NSString stringWithFormat:@"%ld",[self.jieViewModel flowersFoRow:resction]];
+        
+        [cell.picUser setImageWithURL:[self.jieViewModel  imageUserForRow:resction]];
+        
+        cell.userFlower.text = [self.jieViewModel flowersUserForRow:resction];
+        
+        cell.peopleLb.text = [self.jieViewModel peopleNumForRow:resction];
+           return cell;
+    }
+
+    
+  
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.jieViewModel isOnePic:indexPath.section]) {
+        return 148.5;
+    }else{
+    return 220;
+    }
+}
+
+
+
+
 
 @end

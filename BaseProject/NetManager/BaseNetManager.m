@@ -23,7 +23,7 @@ static AFHTTPSessionManager *manager = nil;
 
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
     //打印网络请求， DDLog  与  NSLog 功能一样
-    DDLogVerbose(@"Request Path: %@, params %@", path, params);
+//    DDLogVerbose(@"Request Path: %@, params %@", path, params);
     return [[self sharedAFManager] GET:path parameters:params success:^void(NSURLSessionDataTask * task, id responseObject) {
         complete(responseObject, nil);
     } failure:^void(NSURLSessionDataTask * task, NSError * error) {
@@ -56,6 +56,17 @@ static AFHTTPSessionManager *manager = nil;
 
 + (void)handleError:(NSError *)error{
     [[self new] showErrorMsg:error]; //弹出错误信息
+}
+
++(NSString *)dictChangeUrl : (NSDictionary *)dict baseUrL : (NSString *)baseUrl{
+  
+    NSMutableString *params = [NSMutableString string];
+    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [params appendFormat:@"&%@=%@", key, dict[key]];
+    }];
+    
+    NSString *url = [NSString stringWithFormat:@"%@?%@", baseUrl, [params substringFromIndex:1]];
+    return url;
 }
 
 @end
