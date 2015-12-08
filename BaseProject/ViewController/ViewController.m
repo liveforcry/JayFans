@@ -64,14 +64,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.jieViewModel.rowNumber;
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
-}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSInteger resction = indexPath.section;
+    NSInteger resction = indexPath.row;
     //只有一张图片
   if ([self.jieViewModel isOnePic:resction]) {
     OnePicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
@@ -111,7 +109,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([self.jieViewModel isOnePic:indexPath.section]) {
+    if ([self.jieViewModel isOnePic:indexPath.row]) {
         return 148.5;
     }else{
     return 220;

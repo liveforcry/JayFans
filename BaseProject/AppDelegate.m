@@ -8,15 +8,12 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-#import "infroMationNetManager.h"
-
 #import "JieNetManager.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self initializeWithApplication:application];
